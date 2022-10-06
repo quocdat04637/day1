@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    height: 100vh;
+}
+
+.cart {
+    border-radius: 10px;
+    height: 370px;
+    width: 300px;
+    background-color:darkslategray;
+    margin: 120px auto;
+    position: relative;
+}
+
+.cart img {
+    height: 180px;
+    width: 250px;
+    padding-left: 40px;
+    padding-top: 30px;
+    
+}
+
+
+.cart .cart_cart a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+.cart .cart_heart a{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+.cart .cart_title {
+    font-size: 30px;
+    font-weight: bold;
+    color:#4daf54;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.cart .cart_price {
+    font-size: large;
+    font-weight: bold;
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+
+.cart .chuc_nang {
+    padding-top: 100px;
+    position: relative;
+    padding-left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.cart .chuc_nang .cart_size label {
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cart .chuc_nang .cart_size button {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.cart .chuc_nang .cart_size a {
+    color: black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cart .chuc_nang .cart_color label {
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cart .chuc_nang .cart_color button {
+    height: 25px;
+    width: 25px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+.cart .chuc_nang .cart_color #btn_green {
+    background-color: green;
+
+}
+
+.cart .chuc_nang .cart_color #btn_red {
+    background-color: red;
+
+}
+
+.cart .chuc_nang .cart_color #btn_black {
+    background-color: black;
+}
+
+.cart .chuc_nang .cart_action button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #4daf54;
+    color: white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+.cart .chuc_nang .cart_action #buy {
+    
+    position: absolute;
+    left: 20px;
+
+}
+
+.cart .chuc_nang .cart_action button a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart .chuc_nang .cart_action #buy:hover {
+    height: 38px;
+    width: 110px;
+    position: absolute;
+    left: 25px;
+    transition: 0.1s;
+}
+
+.cart .chuc_nang .cart_action #add {
+    position: absolute;
+    right: 20px;
+
+}
+
+.cart .chuc_nang .cart_action #add:hover {
+    height: 38px;
+    width: 110px;
+    position: absolute;
+    right: 22px;
+    transition: 0.1s;
+
+}
+
+
+.cart:hover img {
+    transform: rotate(-20deg) translate(10px, -70px);
+    transition: 0.5s;
+    
+}
+
+.cart:hover .cart_title {
+    transform: translate(-30px, -40px);
+    transition: 0.5s;
+}
+
+.cart:hover .cart_price {
+    transform: translate(-110px, -40px);
+    transition: 0.5s; 
+}
+.cart:hover .chuc_nang{
+    display: block;
+    transform: translateY(-105px);
+    transition: 0.7s;
+    visibility: visible;
+    opacity: 100;
+}
